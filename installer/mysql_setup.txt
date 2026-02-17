@@ -1,0 +1,9 @@
+sudo mysql
+CREATE USER 'laravel'@'127.0.0.1' IDENTIFIED BY 'your-password-123';
+
+CREATE DATABASE laravel;
+
+GRANT ALL PRIVILEGES ON laravel.* TO 'laravel'@'127.0.0.1';
+FLUSH PRIVILEGES;
+
+exit
